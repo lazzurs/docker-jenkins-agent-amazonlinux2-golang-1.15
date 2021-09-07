@@ -4,7 +4,7 @@ ARG user=jenkins
 
 USER root
 
-RUN yum install -y golang-bin
+RUN yum install -y golang-bin make
 RUN yum clean all
 
 USER ${user}
